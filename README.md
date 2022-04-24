@@ -11,6 +11,11 @@ bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/dock
 bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/flatpak/install.sh)
 ```
 
+### Flatpak
+```bash
+bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/flutter/install.sh)
+```
+
 ### Git
 ```bash
  bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/git/install.sh) \
