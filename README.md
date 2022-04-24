@@ -11,7 +11,7 @@ bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/dock
 bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/flatpak/install.sh)
 ```
 
-### Flatpak
+### Flutter
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/flutter/install.sh)
 ```
@@ -36,6 +36,11 @@ bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/swap
 ### Toolbox
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/toolbox/install.sh)
+```
+
+### VsCode
+```bash
+bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/vscode/install.sh)
 ```
 
 ### Xone

@@ -1,5 +1,5 @@
 # Flutter
 
 ```bash
-bash ./flutter.sh
+bash ./install.sh
 ```

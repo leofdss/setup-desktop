@@ -72,21 +72,22 @@ if which apt &>/dev/null; then
 fi
 
 bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/snap/install.sh)
-
-# #############################
+#############################
 
 # install ###################
-if ! which flutter &>/dev/null; then
-    sudo snap install flutter --classic
-    flutter precache
-fi
-if ! which flutter &>/dev/null; then
-    echo "install flutter error!!!"
-    exit 1
-fi
-# #############################
+for package in 'flutter' 'android-studio'; do
+    if ! which "$package" &>/dev/null; then
+        sudo snap install "$package" --classic
+    fi
+    if ! which "$package" &>/dev/null; then
+        echo "install $package error!!!"
+        exit 1
+    fi
+done
+flutter precache
+#############################
 
-# # exit ######################
+# exit ######################
 echo 'flutter instaled'
 exit 0
-# #############################
+#############################
