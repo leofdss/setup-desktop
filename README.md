@@ -1,5 +1,9 @@
 # setup-desktop
 
+### Oh My BASH!
+```
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+```
 
 ### Docker
 ```bash
