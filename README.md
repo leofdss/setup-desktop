@@ -27,6 +27,11 @@ bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/flut
  -n leofdss 
 ```
 
+### Nautilus scripts
+```bash
+bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/nautilus-scripts/install.sh)
+```
+
 ### Snap
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/leofdss/setup-desktop/main/snap/install.sh)
