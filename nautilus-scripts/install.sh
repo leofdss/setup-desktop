@@ -4,17 +4,17 @@ cat <<- EOF > "$HOME/.local/share/nautilus/scripts/Install fonts"
 #!/usr/bin/env bash
 
 install_fonts() {
- mkdir -p "$HOME/.local/share/fonts"
+ mkdir -p "\$HOME/.local/share/fonts"
 
-  echo "$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS" | while read 'item'
+  echo "\$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS" | while read 'item'
   do
-    if [[ -f "$item" ]]
+    if [[ -f "\$item" ]]
     then
-      cp "$item" "$HOME/.local/share/fonts"
+      cp "\$item" "\$HOME/.local/share/fonts"
     fi
-    if [[ -d "$item" ]]
+    if [[ -d "\$item" ]]
     then
-      cp -r "$item" "$HOME/.local/share/fonts"
+      cp -r "\$item" "\$HOME/.local/share/fonts"
     fi
   done
 }
