@@ -34,14 +34,9 @@ done
 #############################
 
 # setup #####################
-cat <<DONE > $HOME/.gitconfig
-[color]
-  ui = auto
- 
+cat <<DONE > $HOME/.gitconfig 
 [alias]
-  lg = log --pretty=format:'%Cgreen%h %Cblue%ad %Cred%cn %Creset%s' --date=short
-  ll = log --pretty=format:\"%C(yellow)%h%Cred%d\\\\ %Creset%s%Cblue\\\\ [%cn]\" --decorate --numstat
-  ffc = diff-tree --no-commit-id --name-only -r
+  graph = log --oneline --all --graph
  
 [core]
   editor = code --wait
