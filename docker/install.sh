@@ -5,28 +5,25 @@ set -e # strict mode
 echo 'install docker'
 
 # install ###################
-if ! which docker &>/dev/null; then
-
-    curl -fsSL https://get.docker.com | bash
-
-    if ! which docker &>/dev/null; then
-        echo "install docker error!!!"
-        exit 1
-    fi
+if which dnf &>/dev/null; then
+	sudo dnf install docker -y
+	sudo dnf install docker-compose -y
 fi
+if which apt &>/dev/null; then
+	sudo apt update
+	sudo apt install docker.io -y
+    sudo dnf install docker-compose -y
+fi
+#############################
 
+# check #####################
+if ! which docker &>/dev/null; then
+	echo 'install docker error!!!'
+	exit 1
+fi
 if ! which docker-compose &>/dev/null; then
-    if which dnf &>/dev/null; then
-        sudo dnf install docker-compose -y
-    fi
-    if which apt &>/dev/null; then
-        sudo apt update
-        sudo apt install docker-compose -y
-    fi
-    if ! which docker-compose &>/dev/null; then
-        echo "install docker-compose error!!!"
-        exit 1
-    fi
+	echo 'install docker-compose error!!!'
+	exit 1
 fi
 #############################
 
