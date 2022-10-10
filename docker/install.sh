@@ -12,7 +12,7 @@ fi
 if which apt &>/dev/null; then
 	sudo apt update
 	sudo apt install docker.io -y
-    sudo dnf install docker-compose -y
+	sudo apt install docker-compose -y
 fi
 #############################
 
