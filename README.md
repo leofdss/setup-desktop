@@ -39,3 +39,9 @@ bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/sn
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/vscode/install.sh)
 ```
+
+### Apps
+```bash
+wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/apps/database.json \
+| bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/apps/install.sh)
+```
