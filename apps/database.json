@@ -1,0 +1,24 @@
+{
+    "flatpak": {
+        "flathub": [
+            "com.spotify.Client",
+            "com.bitwarden.desktop",
+            "app.drey.Dialect",
+            "com.raggesilver.BlackBox",
+            "re.sonny.OhMySVG",
+            "com.github.k4zmu2a.spacecadetpinball",
+            "nl.hjdskes.gcolor3",
+            "com.mattjakeman.ExtensionManager",
+            "com.github.alexkdeveloper.desktop-files-creator",
+            "com.obsproject.Studio",
+            "org.gnome.Geary",
+            "org.blender.Blender",
+            "org.inkscape.Inkscape",
+            "org.remmina.Remmina",
+            "org.videolan.VLC",
+            "org.gimp.GIMP",
+            "com.github.tchx84.Flatseal",
+            "com.discordapp.Discord"
+        ]
+    }
+}
