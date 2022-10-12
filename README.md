@@ -3,6 +3,8 @@
 ### Oh My BASH!
 ```
 bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
+```
+```
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/oh-my-bash/install.sh)
 ```
 
