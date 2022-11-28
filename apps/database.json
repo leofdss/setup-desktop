@@ -18,7 +18,8 @@
             "org.videolan.VLC",
             "org.gimp.GIMP",
             "com.github.tchx84.Flatseal",
-            "com.discordapp.Discord"
+            "com.discordapp.Discord",
+            "me.dusansimic.DynamicWallpaper"
         ]
     }
 }
