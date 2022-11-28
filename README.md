@@ -40,8 +40,14 @@ bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/sn
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/vscode/install.sh)
 ```
 
-### Apps
+### Install Apps
 ```bash
 wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/apps/database.json \
 | bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/apps/install.sh)
+```
+
+### Remove Apps
+```bash
+wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/apps/database.json \
+| bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/apps/remove.sh)
 ```
