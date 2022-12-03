@@ -19,7 +19,8 @@
             "org.gimp.GIMP",
             "com.github.tchx84.Flatseal",
             "com.discordapp.Discord",
-            "me.dusansimic.DynamicWallpaper"
+            "me.dusansimic.DynamicWallpaper",
+            "com.github.zadam.trilium"
         ]
     }
 }
