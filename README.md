@@ -40,6 +40,11 @@ bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/sn
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/vscode/install.sh)
 ```
 
+### Chrome
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/chrome/install.sh)
+```
+
 ### Install Apps
 ```bash
 wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/apps/database.json \
