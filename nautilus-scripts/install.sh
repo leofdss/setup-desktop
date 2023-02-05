@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cat <<- EOF > "$HOME/.local/share/nautilus/scripts/Install fonts"
+cat <<-EOF >"$HOME/.local/share/nautilus/scripts/Install fonts"
 #!/usr/bin/env bash
 
 install_fonts() {
