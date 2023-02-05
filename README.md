@@ -66,3 +66,8 @@ bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/xo
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/xone/uninstall.sh)
 ```
+
+## Cockpit
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/cockpit/install.sh)
+```
