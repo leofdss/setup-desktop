@@ -21,7 +21,19 @@
             "com.discordapp.Discord",
             "me.dusansimic.DynamicWallpaper",
             "com.github.zadam.trilium",
-            "io.podman_desktop.PodmanDesktop"
+            "io.podman_desktop.PodmanDesktop",
+            "net.retrodeck.retrodeck"
+        ]
+    },
+    "package_manager": {
+        "apt": [
+            "cool-retro-term",
+            "neofetch"
+        ],
+        "dnf": [
+            "cool-retro-term",
+            "distrobox",
+            "neofetch"
         ]
     }
 }
