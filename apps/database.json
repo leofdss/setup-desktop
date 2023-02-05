@@ -24,5 +24,16 @@
             "io.podman_desktop.PodmanDesktop",
             "net.retrodeck.retrodeck"
         ]
+    },
+    "package_manager": {
+        "apt": [
+            "cool-retro-term",
+            "neofetch"
+        ],
+        "dnf": [
+            "cool-retro-term",
+            "distrobox",
+            "neofetch"
+        ]
     }
 }
