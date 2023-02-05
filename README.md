@@ -1,6 +1,6 @@
 # setup-desktop
 
-### Oh My BASH!
+## Oh My BASH!
 ```
 bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 ```
@@ -8,51 +8,61 @@ bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/too
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/oh-my-bash/install.sh)
 ```
 
-### Docker
+## Docker
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/docker/install.sh)
 ```
 
-### Flatpak
+## Flatpak
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/flatpak/install.sh)
 ```
 
-### Git
+## Git
 ```bash
  bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/git/install.sh) \
  -e leonardo.f.desouzasilva@gmail.com \
  -n leofdss 
 ```
 
-### Nautilus scripts
+## Nautilus scripts
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/nautilus-scripts/install.sh)
 ```
 
-### Snap
+## Snap
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/snap/install.sh)
 ```
 
-### VsCode
+## VsCode
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/vscode/install.sh)
 ```
 
-### Chrome
+## Chrome
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/chrome/install.sh)
 ```
 
-### Install Apps
+## Apps
+### Install
 ```bash
 wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/apps/database.json \
 | bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/apps/install.sh)
 ```
-
-### Remove Apps
+### Uninstall
 ```bash
 wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/apps/database.json \
 | bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/apps/remove.sh)
+```
+
+## Xone
+### Install
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/xone/install.sh)
+```
+### Uninstall
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/xone/uninstall.sh)
 ```
