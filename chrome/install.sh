@@ -20,7 +20,7 @@ if [ -x "$(command -v dnf)" ]; then
 fi
 if [ -x "$(command -v apt)" ]; then
     sudo apt update
-	sudo apt install -y fonts-liberation
+    sudo apt install -y fonts-liberation
     sudo apt install -y libasound2
     sudo apt install -y libatk-bridge2.0-0
     sudo apt install -y libatk1.0-0
@@ -44,8 +44,8 @@ fi
 
 # check #####################
 if ! which google-chrome-stable &>/dev/null; then
-	echo 'install chrome error!!!'
-	exit 1
+    echo 'install chrome error!!!'
+    exit 1
 fi
 #############################
 

@@ -6,18 +6,18 @@ echo 'install flatpak'
 
 # install ###################
 if which dnf &>/dev/null; then
-	sudo dnf install flatpak -y
+    sudo dnf install flatpak -y
 fi
 if which apt &>/dev/null; then
-	sudo apt update
-	sudo apt install flatpak -y
+    sudo apt update
+    sudo apt install flatpak -y
 fi
 #############################
 
 # check #####################
 if ! which flatpak &>/dev/null; then
-	echo 'install flatpak error!!!'
-	exit 1
+    echo 'install flatpak error!!!'
+    exit 1
 fi
 #############################
 
