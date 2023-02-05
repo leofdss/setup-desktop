@@ -22,7 +22,8 @@
             "me.dusansimic.DynamicWallpaper",
             "com.github.zadam.trilium",
             "io.podman_desktop.PodmanDesktop",
-            "net.retrodeck.retrodeck"
+            "net.retrodeck.retrodeck",
+            "org.stellarium.Stellarium"
         ]
     },
     "package_manager": {
