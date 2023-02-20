@@ -71,3 +71,9 @@ bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/xo
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/cockpit/install.sh)
 ```
+
+## Fonts
+```bash
+wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/fonts/database.json \
+| bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/fonts/install.sh)
+```
