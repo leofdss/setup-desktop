@@ -97,3 +97,8 @@ bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/mi
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/minikube/uninstall.sh)
 ```
+
+## Codec
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/codec/install.sh)
+```
