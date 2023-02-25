@@ -87,3 +87,13 @@ bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/k3
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/k3s/uninstall.sh)
 ```
+
+## Minikube
+### Install
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/minikube/install.sh)
+```
+### Uninstall
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/minikube/uninstall.sh)
+```
