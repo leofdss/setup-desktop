@@ -77,3 +77,13 @@ bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/co
 wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/fonts/database.json \
 | bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/fonts/install.sh)
 ```
+
+## K3s
+### Install
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/k3s/install.sh)
+```
+### Uninstall
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/k3s/uninstall.sh)
+```
