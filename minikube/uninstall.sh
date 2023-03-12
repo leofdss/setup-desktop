@@ -11,6 +11,7 @@ docker stop $(docker ps -aq)
 rm -r ~/.kube ~/.minikube
 
 sudo rm /usr/local/bin/minikube
+sudo rm /usr/local/bin/kubectl
 #############################
 
 # exit ######################
