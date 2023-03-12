@@ -4,7 +4,6 @@
             "com.spotify.Client",
             "com.bitwarden.desktop",
             "app.drey.Dialect",
-            "com.raggesilver.BlackBox",
             "re.sonny.OhMySVG",
             "com.github.k4zmu2a.spacecadetpinball",
             "nl.hjdskes.gcolor3",
@@ -14,16 +13,14 @@
             "org.gnome.Geary",
             "org.blender.Blender",
             "org.inkscape.Inkscape",
-            "org.remmina.Remmina",
             "org.videolan.VLC",
             "org.gimp.GIMP",
             "com.github.tchx84.Flatseal",
             "com.discordapp.Discord",
             "me.dusansimic.DynamicWallpaper",
-            "com.github.zadam.trilium",
-            "io.podman_desktop.PodmanDesktop",
             "net.retrodeck.retrodeck",
-            "org.stellarium.Stellarium"
+            "org.stellarium.Stellarium",
+            "io.gitlab.theevilskeleton.Upscaler"
         ]
     },
     "package_manager": {
