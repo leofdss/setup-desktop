@@ -38,6 +38,7 @@ done
 cat <<DONE >$HOME/.gitconfig
 [alias]
     graph = log --oneline --all --graph
+    adog = log --all --decorate --oneline --graph
  
 [core]
     editor = code --wait
