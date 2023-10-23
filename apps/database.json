@@ -1,36 +1,24 @@
 {
     "flatpak": {
         "flathub": [
-            "com.spotify.Client",
-            "com.bitwarden.desktop",
-            "app.drey.Dialect",
-            "re.sonny.OhMySVG",
-            "com.github.k4zmu2a.spacecadetpinball",
-            "nl.hjdskes.gcolor3",
-            "com.mattjakeman.ExtensionManager",
-            "com.github.alexkdeveloper.desktop-files-creator",
-            "com.obsproject.Studio",
-            "org.gnome.Geary",
-            "org.blender.Blender",
-            "org.inkscape.Inkscape",
-            "org.videolan.VLC",
-            "org.gimp.GIMP",
-            "com.github.tchx84.Flatseal",
-            "com.discordapp.Discord",
-            "me.dusansimic.DynamicWallpaper",
-            "net.retrodeck.retrodeck",
-            "org.stellarium.Stellarium",
-            "io.gitlab.theevilskeleton.Upscaler"
+            "org.gnome.NetworkDisplays"
+        ]
+    },
+    "snap": {
+        "snapcraft": [
+            "spotify",
+            "bitwarden",
+            "bw",
+            "transmission",
+            "authy",
+            "notion-snap-reborn"
         ]
     },
     "package_manager": {
         "apt": [
-            "cool-retro-term",
             "neofetch"
         ],
         "dnf": [
-            "cool-retro-term",
-            "distrobox",
             "neofetch"
         ]
     }
