@@ -13,7 +13,7 @@ fi
 if [ -x "$(command -v apt)" ]; then
     sudo apt update
     sudo apt install ubuntu-restricted-extras -y
-    sudo apt install libavcodec-extra libav-tools -y
+    sudo apt install libavcodec-extra ffmpeg -y
 fi
 #############################
 
