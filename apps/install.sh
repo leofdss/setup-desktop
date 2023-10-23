@@ -22,6 +22,12 @@ if [ -x "$(command -v flatpak)" ]; then
     done
 fi
 
+if [ -x "$(command -v snap)" ]; then
+    echo "$@" | jq -r '.snap.snapcraft[]' | while read object; do
+        sudo snap install $object
+    done
+fi
+
 if [ -x "$(command -v apt)" ]; then
     echo "$@" | jq -r '.package_manager.apt[]' | while read object; do
         sudo apt install $object -y
