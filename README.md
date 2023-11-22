@@ -22,7 +22,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/fl
 ```bash
  bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/git/install.sh) \
  -e leonardo.f.desouzasilva@gmail.com \
- -n leofdss 
+ -n "Leonardo Farias de Souza Silva" 
 ```
 
 ## Nautilus scripts
