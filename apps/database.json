@@ -1,7 +1,8 @@
 {
     "flatpak": {
         "flathub": [
-            "org.gnome.NetworkDisplays"
+            "org.gnome.NetworkDisplays",
+            "com.obsproject.Studio"
         ]
     },
     "snap": {
@@ -11,7 +12,8 @@
             "bw",
             "transmission",
             "authy",
-            "notion-snap-reborn"
+            "notion-snap-reborn",
+            "vlc"
         ]
     },
     "package_manager": {
