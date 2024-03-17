@@ -5,13 +5,8 @@ set -e # strict mode
 echo 'install flatpak'
 
 # install ###################
-if which dnf &>/dev/null; then
-    sudo dnf install flatpak -y
-fi
-if which apt &>/dev/null; then
-    sudo apt update
-    sudo apt install flatpak -y
-fi
+sudo apt update
+sudo apt install flatpak -y
 #############################
 
 # check #####################
