@@ -36,16 +36,25 @@ done
 
 # setup #####################
 cat <<DONE >$HOME/.gitconfig
+[init]
+    defaultBranch = main
+
+[diff]
+    tool = vscode
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
 [alias]
     graph = log --oneline --all --graph
     adog = log --all --decorate --oneline --graph
- 
+    codediff = difftool -y
+    filediff = diff --name-only
+    filesig = log --pretty=format:'%h - %an, %ar : %s'
+
 [core]
     editor = code --wait
     pager = less -FRX
-
-[credential]
-    helper = cache --timeout=2505600
 
 [user]
     email = ${EMAIL}
@@ -53,6 +62,9 @@ cat <<DONE >$HOME/.gitconfig
 
 [init]
     defaultBranch = main
+
+[credential]
+    helper = cache --timeout=2505600
 DONE
 
 # exit ######################
