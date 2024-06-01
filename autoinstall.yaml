@@ -5,8 +5,8 @@ autoinstall:
 
     locale: pt_BR.UTF-8
     keyboard:
-        layout: us
-        variant: us+alt-intl
+        layout: br
+        variant: ""
     timezone: America/Sao_Paulo
 
     # This adds the default ubuntu-desktop packages to the system.
@@ -19,6 +19,13 @@ autoinstall:
         - ubuntu-restricted-extras
         - gnome-software-plugin-flatpak
         - git
+        - flameshot
+        - curl
+        - wget
+        - dkms
+        - cabextract
+        - jq
+        - vim
 
     # This adds the default snaps found on a 22.04 Ubuntu Desktop system.
     # Any desired additional snaps may aslso be listed here.
@@ -110,3 +117,16 @@ autoinstall:
     # autoinstall.
     # user-data:
     #   …
+    user-data: # Commands here run during first boot (cannot be interactive)
+        runcmd:
+            - systemctl start docker
+            - systemctl enable docker
+            - usermod -aG docker leo
+            - flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+            - su leo -c 'bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/git/install.sh) -e leonardo.f.desouzasilva@gmail.com -n "Leonardo Farias de Souza Silva"'
+            - su leo -c 'wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/fonts/database.json | bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/fonts/install.sh)'
+            - git clone https://github.com/medusalix/xone $HOME/xone
+            - cd $HOME/xone && ./install.sh --release
+            - cd $HOME/xone && xone-get-firmware.sh --skip-disclaimer
+            - su leo -c 'bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"'
+            - su leo -c 'bash <(wget -qO- https://raw.githubusercontent.com/leofdss/setup-desktop/main/oh-my-bash/install.sh)'

@@ -2,25 +2,6 @@
 
 set -e # strict mode
 
-echo 'install git'
-
-# install ###################
-if which dnf &>/dev/null; then
-    sudo dnf install git -y
-fi
-if which apt &>/dev/null; then
-    sudo apt update
-    sudo apt install git -y
-fi
-#############################
-
-# check #####################
-if ! which git &>/dev/null; then
-    echo 'install git error!!!'
-    exit 1
-fi
-#############################
-
 # get opts ###################
 while getopts ":e:n:" options; do
     case "${options}" in
@@ -36,9 +17,6 @@ done
 
 # setup #####################
 cat <<DONE >$HOME/.gitconfig
-[init]
-    defaultBranch = main
-
 [diff]
     tool = vscode
 
@@ -64,6 +42,7 @@ cat <<DONE >$HOME/.gitconfig
     defaultBranch = main
 
 [credential]
+    useHttpPath = true
     helper = cache --timeout=2505600
 DONE
 

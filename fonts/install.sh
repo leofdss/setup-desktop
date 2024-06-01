@@ -15,11 +15,6 @@ json="$@"
 #############################
 
 # install ##################
-sudo apt update
-sudo apt install -y wget
-sudo apt install -y unzip
-sudo apt install -y jq
-
 echo $json | jq -r '.zip[].name' | while read name; do
     link=$(echo $json | jq -r ".zip[] | select(.name == \"${name}\") | {link} | join(\"\")")
     file="${name}.zip"
